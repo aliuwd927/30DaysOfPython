@@ -32,7 +32,37 @@ print(listOfParents)
 # Slice out the first three items and the last three items from food_staff_lt list
 # Delete the food_staff_tp tuple completely
 # Check if an item exists in tuple:
+
+fruits = ('Apples', 'Oranges', 'Cherry')
+vegetables = ('Cabbage', 'Broccolis', 'tomato')
+animal_products = ('Milk', 'Eggs', 'Butter')
+
+food_stuff_tp = fruits + vegetables + animal_products
+
+#('Apples', 'Oranges', 'Cherry', 'Cabbage', 'Broccolis', 'tomato', 'Milk', 'Eggs', 'Butter')
+print(food_stuff_tp)
+
+food_stuff_lt = list(food_stuff_tp)
+
+middle_lt = list(food_stuff_tp[4:5])
+print(middle_lt)
+
+first_three = food_stuff_lt[0:4]
+last_three = food_stuff_lt[6:9]
+
+print(last_three)
+
+del food_stuff_tp
+
+
 # Check if 'Estonia' is a nordic country
 
 # Check if 'Iceland' is a nordic country
 # nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+
+nordic_countries = ('Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden')
+
+checkEstonia = ('Estonia' in nordic_countries)
+checkIceland = ('Iceland' in nordic_countries)
+print(checkEstonia)
+print(checkIceland)
